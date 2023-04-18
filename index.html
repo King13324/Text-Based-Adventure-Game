@@ -18,6 +18,19 @@
         <p></p>
 
         <h2>Links to pages for testing</h2>
-        <input type="button" value="death screen" onclick="function changewindow() {window.location.href='death.html'}">
+        <input type="button" value="death screen" onclick="return gotoDeath();">
+        <script>
+            function gotoDeath()
+            {
+                window.location.href = "death.html";
+            }
+        </script>
+        <input type="button" value="game screen" onclick="return gotoGame();">
+        <script>
+            function gotoGame
+            {
+                window.location.href = "game.html";
+            }
+        </script>
     </body>
 </html>
